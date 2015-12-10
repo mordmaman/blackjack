@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blackjack</title>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="blackjackfinal.js"></script>
+</head>
+
+<body style="background-color: #355e3b;">
+	<div class="container">	
+		
+		<!--<div class="row center-block">	
+			<div class="col-md-4">-->
+				<h1 class="text-center"> Blackjack</h2>
+				
+				<div class="row center-block">
+				<button type="button" class="btn btn-primary btn-sm" onclick=pickCard()>Deal Me In!</button>
+				<button type="button" class="btn btn-primary btn-sm" onclick="location.reload()">New Game?</button>
+				</div>
+				<br>
+			<!--</div>
+		</div>	-->
+		<!--///<div class="row center-block">-->
+					<table class="table center-block">
+						<thead>Your Cards</thead>
+						<tr>
+							<td> <img id="card1" src="http://www.jimknapp.com/Cards/Non-Bicycle_files/image002.jpg" height=136 width=106>
+							<td> <img id="card3" src="http://www.jimknapp.com/Cards/Non-Bicycle_files/image001.jpg" height=136 width=106>
+							<td> <img id="card5" height=136 width=106>
+							<td> <img id="card6" height=136 width=106>
+							<td> <img id="card7" height=136 width=106>
+						</tr>
+					</table>
+				 
+				<div class="row">	
+				<p id="usercards"></p>
+				<p id="newusercards"></p>
+				<p id="result"></p>
+				</div>
+				
+				<div class="row">
+				<p id="choice"></p>
+				<button id="hit" type="button" class="btn btn-success btn-sm" style="visibility:hidden" onclick="pickOneCard()">Hit me!</button>
+				<button id="stick" type="button" class="btn btn-warning btn-sm" style="visibility:hidden" onclick="stick()">Stick</button>
+				</div>
+				<br>
+				<br>
+				
+				<table class="table col-md-4 center-block">
+						<thead>Dealer's Cards</thead>
+						<tr>
+							<td> <img id="card2" src="http://www.jimknapp.com/Cards/Non-Bicycle_files/image002.jpg" height=136 width=106>
+							<td> <img id="card4" src="http://www.jimknapp.com/Cards/Non-Bicycle_files/image001.jpg" height=136 width=106>
+							<td> <img id="card9"  height=136 width=106>
+							<td> <img id="card10" height=136 width=106>
+							<td> <img id="card11" height=136 width=106>
+						</tr>
+					</table>
+					
+				<div class="row">	
+				<p id="dealercards"></p>
+				</div>
+	</div><!--closes container-->
+	
+	
+</body>
+</html>
